@@ -100,7 +100,7 @@ INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date,
 INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1020', 'P1014', 'Database Design', '2020-07-29', '2020-08-08'); 
 INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1021', 'P1015', 'Database Design', '2020-08-23', '2020-09-03'); 
 INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1022', 'P1016', 'Database Design', '2020-10-28', '2020-11-02'); 
-INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1023', 'P1016', 'Database Design', '2020-10-02', '2020-11-09'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1023', 'P1016', 'Database Design', '2020-11-02', '2020-11-09'); 
 
 
 
