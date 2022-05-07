@@ -77,10 +77,34 @@ INSERT INTO Project (Project_ID, Customer_ID, Project_Description, Project_Date,
 INSERT INTO Project (Project_ID, Customer_ID, Project_Description, Project_Date, Scheduled_StartDate, Scheduled_EndDate, Approx_Budget, Actual_StartDate, Actual_EndDate, Actual_Cost, Manager_ID)
   VALUES ('P1016', 'C1014', 'Database Design', '2020-10-25', '2020-10-28', '2020-11-08', '60000', '2020-10-28', '2020-11-09', '55000', 'E1014');
 
-/*
-
 -- Project Schedule
-INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1000', 'P1000', 'Database Design', '2018-03-01', '2018-03-10'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1001', 'P1001', 'Database Design', '2018-02-25', '2018-03-01'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1002', 'P1001', 'Database Design', '2018-03-01', '2018-03-10'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1003', 'P1002', 'Database Design', '2019-04-01', '2019-04-10'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1004', 'P1003', 'Database Design', '2019-05-01', '2019-05-12'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1005', 'P1004', 'Database Design', '2019-05-13', '2019-05-23'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1006', 'P1005', 'Database Design', '2019-05-27', '2019-06-06'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1007', 'P1006', 'Database Design', '2019-08-30', '2019-09-11'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1008', 'P1007', 'Database Design', '2019-09-19', '2019-09-23'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1009', 'P1007', 'Database Design', '2019-09-24', '2019-09-29'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1010', 'P1008', 'Database Design', '2020-01-05', '2020-01-10'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1011', 'P1008', 'Database Design', '2020-01-11', '2020-01-14'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1012', 'P1009', 'Database Design', '2020-03-01', '2020-03-11'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1013', 'P1010', 'Database Design', '2020-03-08', '2020-03-17'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1014', 'P1011', 'Database Design', '2020-06-28', '2020-07-03'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1015', 'P1011', 'Database Design', '2020-07-03', '2020-07-10'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1016', 'P1012', 'Database Design', '2020-06-18', '2020-06-20'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1017', 'P1012', 'Database Design', '2020-06-21', '2020-06-28');
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1018', 'P1013', 'Database Design', '2020-07-30', '2020-08-09'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1019', 'P1013', 'Database Design', '2020-08-03', '2020-08-09'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1020', 'P1014', 'Database Design', '2020-07-29', '2020-08-08'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1021', 'P1015', 'Database Design', '2020-08-23', '2020-09-03'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1022', 'P1016', 'Database Design', '2020-10-28', '2020-11-02'); 
+INSERT INTO Project_Schedule (Task_ID, Project_ID, Task_Description, Start_Date, End_Date) VALUES ('T1023', 'P1016', 'Database Design', '2020-10-02', '2020-11-09'); 
+
+
+
+/*
 
 -- Assignment
 INSERT INTO Assignment (ProjAssignment_ID, Employee_ID, Project_ID, Task_ID, ProjAssignment_StartDate, ProjAssignment_EndDate) VALUES ('PA1000', 'E1000', 'P1000', 'T1000', '2018-03-01', '2020-03-10');
