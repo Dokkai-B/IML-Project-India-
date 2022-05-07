@@ -33,7 +33,7 @@ CREATE TABLE Employee (
   Employee_Fname VARCHAR(30) NOT NULL,
   Employee_Lname VARCHAR(30) NOT NULL,
   Employee_Initial VARCHAR(3),
-  Region_ID VARCHAR(8) UNIQUE NOT NULL,
+  Region_ID VARCHAR(8) NOT NULL,
   Hire_Date DATE NOT NULL,
   PRIMARY KEY (Employee_ID),
   CONSTRAINT FK_Employee_Region_ID
