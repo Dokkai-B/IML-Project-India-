@@ -8,7 +8,7 @@ DROP TABLE Skill;
 DROP TABLE Task_Skills;
 DROP TABLE Skill_Employee;
 DROP TABLE Bill;
-DROP TABLE Work_Log;
+DROP TABLE Work_Logs;
 
 CREATE TABLE Region (
   Region_ID VARCHAR(8) NOT NULL,
@@ -134,7 +134,7 @@ CREATE TABLE Bill (
   PRIMARY KEY (Bill_Number)
 );
 
-CREATE TABLE Work_Log (
+CREATE TABLE Work_Logs (
   WorkLog_ID VARCHAR(8) UNIQUE NOT NULL,
   Employee_ID VARCHAR(10) UNIQUE NOT NULL,
   Assignment_ID VARCHAR(8) UNIQUE NOT NULL,
