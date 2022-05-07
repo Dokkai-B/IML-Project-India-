@@ -109,7 +109,7 @@ CREATE TABLE Task_Skills (
   PRIMARY KEY (Task_ID, Skill_ID),
   CONSTRAINT FK_Task_Skills_Task_ID
     FOREIGN KEY (Task_ID)
-      REFERENCES Project_Schedule(Skill_ID)
+      REFERENCES Project_Schedule(Skill_ID),
   CONSTRAINT FK_Task_Skills_Skill_ID
     FOREIGN KEY (Skill_ID)
       REFERENCES Skill(Skill_ID)
@@ -121,7 +121,7 @@ CREATE TABLE Skill_Employee (
   PRIMARY KEY (Employee_ID, Skill_ID),
   CONSTRAINT FK_Skill_Employee_Employee_ID
     FOREIGN KEY (Employee_ID)
-      REFERENCES Employee(Employee_ID)
+      REFERENCES Employee(Employee_ID),
   CONSTRAINT FK_Skill_Employee_Skill_ID
     FOREIGN KEY (Skill_ID)
       REFERENCES Skill(Skill_ID)
@@ -147,7 +147,7 @@ CREATE TABLE Work_Log (
       REFERENCES Employee(Employee_ID),
   CONSTRAINT FK_Work_Logs_Assignment_ID
     FOREIGN KEY (Assignment_ID)
-      REFERENCES Assignment(Project_ID)
+      REFERENCES Assignment(Project_ID),
   CONSTRAINT FK_Work_Logs_Bill_Number
     FOREIGN KEY (Bill_Number)
       REFERENCES Bill(Bill_Number)
