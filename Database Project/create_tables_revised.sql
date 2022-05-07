@@ -11,7 +11,7 @@ DROP TABLE Bill;
 DROP TABLE Work_Logs;
 
 CREATE TABLE Region (
-  Region_ID VARCHAR(8) NOT NULL,
+  Region_ID VARCHAR(8) UNIQUE NOT NULL,
   Region_Name VARCHAR(255) NOT NULL,
   PRIMARY KEY (Region_ID)
   CHECK(Region_Name IN ('NW', 'SW', 'MN', 'MS', 'NE', 'SE'))
@@ -98,9 +98,9 @@ CREATE TABLE Skill (
   Skill_Description TEXT NOT NULL,
   Skill_PayRate DECIMAL(6, 2) NOT NULL,
   CHECK(Skill_Description IN ('Data Entry I', 'Data Entry II',
-'Systems Analyst I', 'Systems Analyst II', 'Database Designer I', 'Database Designer II', 'Java I', 'Java II', 'C++ I', 'C++
-II', 'Python I', 'Python II', 'ColdFusion I', 'ColdFusion II', 'ASP I', 'ASP II', 'Oracle DBA', 'MS SQL Server DBA', 'Network
-Engineer I', 'Network Engineer II', 'Web Administrator', 'Technical Writer', 'Project Manager')),
+    'Systems Analyst I', 'Systems Analyst II', 'Database Designer I', 'Database Designer II', 'Java I', 'Java II', 'C++ I', 
+    'C++ II', 'Python I', 'Python II', 'ColdFusion I', 'ColdFusion II', 'ASP I', 'ASP II', 'Oracle DBA', 'MS SQL Server DBA', 
+    'Network Engineer I', 'Network Engineer II', 'Web Administrator', 'Technical Writer', 'Project Manager')),
   PRIMARY KEY (Skill_ID)
 );
 
@@ -120,7 +120,7 @@ CREATE TABLE Task_Skills (
 
 CREATE TABLE Skill_Employee (
   Employee_ID VARCHAR(10),
-  Skill_ID VARCHAR(8) UNIQUE NOT NULL,
+  Skill_ID VARCHAR(8) NOT NULL,
   PRIMARY KEY (Employee_ID, Skill_ID),
   CONSTRAINT FK_Skill_Employee_Employee_ID
     FOREIGN KEY (Employee_ID)
@@ -139,9 +139,9 @@ CREATE TABLE Bill (
 
 CREATE TABLE Work_Logs (
   WorkLog_ID VARCHAR(8) UNIQUE NOT NULL,
-  Employee_ID VARCHAR(10) UNIQUE NOT NULL,
-  Assignment_ID VARCHAR(8) UNIQUE NOT NULL,
-  Bill_Number VARCHAR(10) UNIQUE NOT NULL,
+  Employee_ID VARCHAR(10) NOT NULL,
+  Assignment_ID VARCHAR(8) NOT NULL,
+  Bill_Number VARCHAR(10) NOT NULL,
   Hours_Worked INTEGER NOT NULL,
   WL_Date DATE NOT NULL,
   PRIMARY KEY (WorkLog_ID),
