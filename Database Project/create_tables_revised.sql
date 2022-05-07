@@ -56,7 +56,10 @@ CREATE TABLE Project (
   PRIMARY KEY (Project_ID),
   CONSTRAINT FK_Project_Customer_ID
     FOREIGN KEY (Customer_ID)
-    REFERENCES Customer(Customer_ID)
+    REFERENCES Customer(Customer_ID),
+  CONSTRAINT FK_Project_Manager_ID
+    FOREIGN KEY (Manager_ID)
+    REFERENCES Employee(Employee_ID)
 );
 
 CREATE TABLE Project_Schedule (
