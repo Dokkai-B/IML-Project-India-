@@ -53,7 +53,7 @@ CREATE TABLE Project (
   Actual_EndDate DATE NOT NULL,
   Actual_Cost DECIMAL(6, 2) NOT NULL,
   Manager_ID VARCHAR(8) UNIQUE NOT NULL,
-  PRIMARY KEY (Project_ID)
+  PRIMARY KEY (Project_ID),
   CONSTRAINT FK_Project_Customer_ID
     FOREIGN KEY (Customer_ID)
     REFERENCES Customer(Customer_ID)
