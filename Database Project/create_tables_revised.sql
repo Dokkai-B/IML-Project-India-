@@ -21,7 +21,7 @@ CREATE TABLE Customer (
   Customer_ID VARCHAR(10) UNIQUE NOT NULL,
   Region_ID VARCHAR(8) NOT NULL,
   Customer_Name VARCHAR(255) NOT NULL,
-  Phone_Number VARCHAR(30),
+  Phone_Number VARCHAR(12),
   PRIMARY KEY (Customer_ID),
   CONSTRAINT FK_Customer_Region_ID
     FOREIGN KEY (Region_ID)
@@ -42,7 +42,7 @@ CREATE TABLE Employee (
 );
 
 CREATE TABLE Project (
-  Project_ID VARCHAR(8) NOT NULL,
+  Project_ID VARCHAR(8) UNIQUE NOT NULL,
   Customer_ID VARCHAR(10) NOT NULL,
   Project_Description TEXT NOT NULL,
   Project_Date DATE NOT NULL,
@@ -112,14 +112,14 @@ CREATE TABLE Task_Skills (
   PRIMARY KEY (Task_ID, Skill_ID),
   CONSTRAINT FK_Task_Skills_Task_ID
     FOREIGN KEY (Task_ID)
-      REFERENCES Project_Schedule(Skill_ID),
+      REFERENCES Project_Schedule(Task_ID),
   CONSTRAINT FK_Task_Skills_Skill_ID
     FOREIGN KEY (Skill_ID)
       REFERENCES Skill(Skill_ID)
 );
 
 CREATE TABLE Skill_Employee (
-  Employee_ID VARCHAR(10),
+  Employee_ID VARCHAR(10) NOT NULL,
   Skill_ID VARCHAR(8) NOT NULL,
   PRIMARY KEY (Employee_ID, Skill_ID),
   CONSTRAINT FK_Skill_Employee_Employee_ID
