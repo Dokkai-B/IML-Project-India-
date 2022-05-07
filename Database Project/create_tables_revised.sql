@@ -13,7 +13,7 @@ DROP TABLE Work_Logs;
 CREATE TABLE Region (
   Region_ID VARCHAR(8) UNIQUE NOT NULL,
   Region_Name VARCHAR(255) NOT NULL,
-  PRIMARY KEY (Region_ID)
+  PRIMARY KEY (Region_ID),
   CHECK(Region_Name IN ('NW', 'SW', 'MN', 'MS', 'NE', 'SE'))
 );
 
