@@ -64,7 +64,7 @@ CREATE TABLE Project (
 
 CREATE TABLE Project_Schedule (
   Task_ID VARCHAR(8) UNIQUE NOT NULL,
-  Project_ID VARCHAR(8) UNIQUE NOT NULL,
+  Project_ID VARCHAR(8) NOT NULL,
   Task_Description TEXT NOT NULL,
   Start_Date DATE NOT NULL,
   End_Date DATE NOT NULL,
@@ -76,9 +76,9 @@ CREATE TABLE Project_Schedule (
 
 CREATE TABLE Assignment (
   ProjAssignment_ID VARCHAR(8) UNIQUE NOT NULL,
-  Employee_ID VARCHAR(10) UNIQUE NOT NULL,
-  Project_ID VARCHAR(8) UNIQUE NOT NULL,
-  Task_ID VARCHAR(8) UNIQUE NOT NULL,
+  Employee_ID VARCHAR(10) NOT NULL,
+  Project_ID VARCHAR(8) NOT NULL,
+  Task_ID VARCHAR(8) NOT NULL,
   ProjAssignment_StartDate DATE NOT NULL,
   ProjAssignment_EndDate DATE NOT NULL,
   PRIMARY KEY (ProjAssignment_ID),
@@ -96,7 +96,7 @@ CREATE TABLE Assignment (
 CREATE TABLE Skill (
   Skill_ID VARCHAR(8) UNIQUE NOT NULL,
   Skill_Description TEXT NOT NULL,
-  Skill_PayRate DECIMAL(6, 2) NOT NULL
+  Skill_PayRate DECIMAL(6, 2) NOT NULL,
   CHECK(Skill_Description IN ('Data Entry I', 'Data Entry II',
 'Systems Analyst I', 'Systems Analyst II', 'Database Designer I', 'Database Designer II', 'Java I', 'Java II', 'C++ I', 'C++
 II', 'Python I', 'Python II', 'ColdFusion I', 'ColdFusion II', 'ASP I', 'ASP II', 'Oracle DBA', 'MS SQL Server DBA', 'Network
@@ -150,7 +150,7 @@ CREATE TABLE Work_Logs (
       REFERENCES Employee(Employee_ID),
   CONSTRAINT FK_Work_Logs_Assignment_ID
     FOREIGN KEY (Assignment_ID)
-      REFERENCES Assignment(Project_ID),
+      REFERENCES Assignment(ProjAssignment_ID),
   CONSTRAINT FK_Work_Logs_Bill_Number
     FOREIGN KEY (Bill_Number)
       REFERENCES Bill(Bill_Number)
