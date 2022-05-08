@@ -105,17 +105,20 @@ CREATE TABLE Skill (
 );
 
 CREATE TABLE Task_Skills (
-  Task_ID VARCHAR(8) UNIQUE NOT NULL,
-  Skill_ID VARCHAR(8) UNIQUE NOT NULL,
-  Project_ID VARCHAR(8) UNIQUE NOT NULL,
+  Task_ID VARCHAR(8) NOT NULL,
+  Skill_ID VARCHAR(8) NOT NULL,
+  Project_ID VARCHAR(8) NOT NULL,
   No_Of_Employees INTEGER NOT NULL,
-  PRIMARY KEY (Task_ID, Skill_ID),
+  PRIMARY KEY (Task_ID, Skill_ID, Project_ID),
   CONSTRAINT FK_Task_Skills_Task_ID
     FOREIGN KEY (Task_ID)
       REFERENCES Project_Schedule(Task_ID),
   CONSTRAINT FK_Task_Skills_Skill_ID
     FOREIGN KEY (Skill_ID)
       REFERENCES Skill(Skill_ID)
+  CONSTRAINT FK_Task_Skills_Project_ID
+    FOREIGN KEY (Project_ID)
+      REFERENCES Project(Project_ID)
 );
 
 CREATE TABLE Skill_Employee (
