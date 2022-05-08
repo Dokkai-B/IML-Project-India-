@@ -129,51 +129,6 @@ INSERT INTO Assignment (ProjAssignment_ID, Employee_ID, Project_ID, Task_ID, Pro
 INSERT INTO Assignment (ProjAssignment_ID, Employee_ID, Project_ID, Task_ID, ProjAssignment_StartDate, ProjAssignment_EndDate) VALUES ('PA1023', 'E1014', 'P1016', 'T1022', '2020-10-28', '2020-11-02');
 INSERT INTO Assignment (ProjAssignment_ID, Employee_ID, Project_ID, Task_ID, ProjAssignment_StartDate, ProjAssignment_EndDate) VALUES ('PA1024', 'E1015', 'P1016', 'T1023', '2020-11-02', '2020-11-09');
 
--- Bill 
--- revise total amount (same amount sa actual cost in proj table i think)
-INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00001', '2019-03-06', '18000');
-INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00002', '2019-04-10', '27000');
-INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00003', '2019-05-12', '38000');
-INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00004', '2019-05-23', '50000');
-INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00005', '2019-06-06', '49000');
-INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00006', '2019-09-11', '99000');
-INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00007', '2019-09-29', '18000');
-INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00008', '2020-01-14', '26000');
-INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00009', '2020-03-11', '20000');
-INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00010', '2020-03-17', '60000');
-INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00011', '2020-07-10', '60000');
-INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00012', '2020-06-28', '92000');
-INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00013', '2020-08-09', '13000');
-INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00014', '2020-08-08', '30000');
-INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00015', '2020-09-03', '40000');
-INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00016', '2020-11-09', '55000');
-
--- Work Logs 
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1001', 'E1001', 'PA1001', '00001', '56', '2018-03-29');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1002', 'E1002', 'PA1002', '00001', '56', '2018-03-29');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1003', 'E1002', 'PA1003', '00002', '72', '2019-04-26');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1004', 'E1004', 'PA1004', '00003', '72', '2019-05-31');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1005', 'E1002', 'PA1005', '00004', '56', '2019-05-31');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1006', 'E1006', 'PA1006', '00005', '80', '2019-09-27');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1007', 'E1006', 'PA1007', '00006', '64', '2019-10-25');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1008', 'E1010', 'PA1008', '00007', '56', '2019-09-27');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1009', 'E1006', 'PA1009', '00007', '56', '2019-09-27');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1010', 'E1016', 'PA1010', '00008', '56', '2020-01-31');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1011', 'E1010', 'PA1011', '00008', '56', '2020-01-31');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1012', 'E1012', 'PA1012', '00009', '64', '2020-03-27');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1013', 'E1013', 'PA1013', '00010', '48', '2020-03-27');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1014', 'E1014', 'PA1014', '00011', '72', '2020-07-31');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1015', 'E1015', 'PA1015', '00011', '72', '2020-07-31');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1016', 'E1016', 'PA1016', '00012', '72', '2020-06-26');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1017', 'E1017', 'PA1017', '00012', '72', '2020-06-26');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1018', 'E1008', 'PA1018', '00013', '80', '2020-08-28'); 
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1019', 'E1011', 'PA1019', '00013', '80', '2020-08-28');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1020', 'E1014', 'PA1020', '00014', '72', '2020-08-38');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1021', 'E1016', 'PA1021', '00015', '80', '2020-09-25');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1022', 'E1017', 'PA1022', '00015', '80', '2020-09-25');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1023', 'E1014', 'PA1023', '00016', '64', '2020-11-27');
-INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1024', 'E1015', 'PA1024', '00016', '64', '2020-11-27');
-
 -- Skill
 INSERT INTO Skill (Skill_ID, Skill_Description, Skill_PayRate) VALUES ('S1000', 'Data Entry I', '1000');
 INSERT INTO Skill (Skill_ID, Skill_Description, Skill_PayRate) VALUES ('S1001', 'Data Entry II', '2000');
@@ -264,7 +219,6 @@ INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES 
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1022', 'S1002', 'P1001', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1022', 'S1003', 'P1001', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1023', 'S1022', 'P1001', '2');
-
 --Project P1002
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1001', 'S1006', 'P1002', '1');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1001', 'S1010', 'P1002', '2');
@@ -275,9 +229,7 @@ INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES 
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1015', 'S1021', 'P1002', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1017', 'S1018', 'P1002', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1001', 'S1022', 'P1002', '2');
-
 --Project P1003
-
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1018', 'S1000', 'P1003', '4');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1019', 'S1000', 'P1003', '4');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1019', 'S1004', 'P1003', '2');
@@ -285,7 +237,6 @@ INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES 
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1021', 'S1018', 'P1003', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1023', 'S1022', 'P1003', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1023', 'S1021', 'P1003', '2');
-
 --Project P1004
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1002', 'S1006', 'P1004', '1');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1002', 'S1008', 'P1004', '2');
@@ -294,7 +245,6 @@ INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES 
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1008', 'S1018', 'P1004', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1006', 'S1021', 'P1004', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1006', 'S1022', 'P1004', '2');
-
 --Project P1005
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1001', 'S1012', 'P1005', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1012', 'S1018', 'P1005', '2');
@@ -304,7 +254,6 @@ INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES 
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1015', 'S1021', 'P1005', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1017', 'S1022', 'P1005', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1017', 'S1019', 'P1005', '2');
-
 --Project P1006
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1010', 'S1000', 'P1006', '4');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1010', 'S1004', 'P1006', '2');
@@ -314,7 +263,6 @@ INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES 
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1016', 'S1017', 'P1006', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1023', 'S1014', 'P1006', '3');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1023', 'S1015', 'P1006', '3');
-
 --Project P1007 
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1001', 'S1016', 'P1007', '1');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1001', 'S1017', 'P1007', '2');
@@ -328,7 +276,6 @@ INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES 
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1017', 'S1021', 'P1007', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1017', 'S1020', 'P1007', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1017', 'S1022', 'P1007', '2');
-
 --Project P1008
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1010', 'S1013', 'P1008', '4');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1010', 'S1014', 'P1008', '3');
@@ -340,7 +287,6 @@ INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES 
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1017', 'S1013', 'P1008', '4');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1017', 'S1021', 'P1008', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1017', 'S1022', 'P1008', '2');
-
 --Project P1009
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1018', 'S1002', 'P1009', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1018', 'S1004', 'P1009', '2');
@@ -352,7 +298,6 @@ INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES 
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1023', 'S1002', 'P1009', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1023', 'S1021', 'P1009', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1023', 'S1022', 'P1009', '2');
-
 --Project P1010
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1010', 'S1005', 'P1010', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1010', 'S1008', 'P1010', '2');
@@ -366,7 +311,6 @@ INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES 
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1017', 'S1005', 'P1010', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1017', 'S1021', 'P1010', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1017', 'S1022', 'P1010', '2');
-
 --Project P1011
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1018', 'S1001', 'P1011', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1018', 'S1006', 'P1011', '1');
@@ -378,7 +322,6 @@ INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES 
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1021', 'S1010', 'P1011', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1023', 'S1022', 'P1011', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1023', 'S1017', 'P1011', '2');
-
 --Project P1012
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1001', 'S1000', 'P1012', '4');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1001', 'S1005', 'P1012', '2');
@@ -392,7 +335,6 @@ INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES 
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1016', 'S1021', 'P1012', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1017', 'S1022', 'P1012', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1017', 'S1019', 'P1012', '1');
-
 --Project P1013
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1018', 'S1010', 'P1013', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1018', 'S1009', 'P1013', '2');
@@ -405,7 +347,6 @@ INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES 
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1023', 'S1019', 'P1013', '1');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1023', 'S1020', 'P1013', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1023', 'S1022', 'P1013', '2');
-
 --Project P1014
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1010', 'S1005', 'P1014', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1010', 'S1006', 'P1014', '1');
@@ -418,7 +359,6 @@ INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES 
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1016', 'S1017', 'P1014', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1017', 'S1022', 'P1014', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1017', 'S1014', 'P1014', '3');
-
 --Project P1015
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1001', 'S1000', 'P1015', '4');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1001', 'S1008', 'P1015', '2');
@@ -431,7 +371,6 @@ INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES 
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1009', 'S1016', 'P1015', '1');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1009', 'S1021', 'P1015', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1009', 'S1022', 'P1015', '2');
-
 --Project P1016
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1018', 'S1008', 'P1016', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1018', 'S1011', 'P1016', '2');
@@ -446,3 +385,48 @@ INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES 
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1023', 'S1008', 'P1016', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1023', 'S1021', 'P1016', '2');
 INSERT INTO Task_Skills (Task_ID, Skill_ID, Project_ID, No_Of_Employees) VALUES ('T1023', 'S1022', 'P1016', '2');
+
+-- Bill 
+-- revise total amount (same amount sa actual cost in proj table i think)
+INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00001', '2019-03-06', '18000');
+INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00002', '2019-04-10', '27000');
+INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00003', '2019-05-12', '38000');
+INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00004', '2019-05-23', '50000');
+INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00005', '2019-06-06', '49000');
+INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00006', '2019-09-11', '99000');
+INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00007', '2019-09-29', '18000');
+INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00008', '2020-01-14', '26000');
+INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00009', '2020-03-11', '20000');
+INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00010', '2020-03-17', '60000');
+INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00011', '2020-07-10', '60000');
+INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00012', '2020-06-28', '92000');
+INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00013', '2020-08-09', '13000');
+INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00014', '2020-08-08', '30000');
+INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00015', '2020-09-03', '40000');
+INSERT INTO Bill (Bill_Number, Bill_Date, Total_Amount) VALUES ('00016', '2020-11-09', '55000');
+
+-- Work Logs 
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1001', 'E1001', 'PA1001', '00001', '56', '2018-03-29');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1002', 'E1002', 'PA1002', '00001', '56', '2018-03-29');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1003', 'E1002', 'PA1003', '00002', '72', '2019-04-26');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1004', 'E1004', 'PA1004', '00003', '72', '2019-05-31');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1005', 'E1002', 'PA1005', '00004', '56', '2019-05-31');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1006', 'E1006', 'PA1006', '00005', '80', '2019-09-27');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1007', 'E1006', 'PA1007', '00006', '64', '2019-10-25');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1008', 'E1010', 'PA1008', '00007', '56', '2019-09-27');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1009', 'E1006', 'PA1009', '00007', '56', '2019-09-27');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1010', 'E1016', 'PA1010', '00008', '56', '2020-01-31');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1011', 'E1010', 'PA1011', '00008', '56', '2020-01-31');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1012', 'E1012', 'PA1012', '00009', '64', '2020-03-27');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1013', 'E1013', 'PA1013', '00010', '48', '2020-03-27');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1014', 'E1014', 'PA1014', '00011', '72', '2020-07-31');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1015', 'E1015', 'PA1015', '00011', '72', '2020-07-31');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1016', 'E1016', 'PA1016', '00012', '72', '2020-06-26');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1017', 'E1017', 'PA1017', '00012', '72', '2020-06-26');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1018', 'E1008', 'PA1018', '00013', '80', '2020-08-28'); 
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1019', 'E1011', 'PA1019', '00013', '80', '2020-08-28');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1020', 'E1014', 'PA1020', '00014', '72', '2020-08-38');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1021', 'E1016', 'PA1021', '00015', '80', '2020-09-25');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1022', 'E1017', 'PA1022', '00015', '80', '2020-09-25');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1023', 'E1014', 'PA1023', '00016', '64', '2020-11-27');
+INSERT INTO Work_Logs (WorkLog_ID, Employee_ID, Assignment_ID, Bill_Number, Hours_Worked, WL_Date) VALUES ('WL1024', 'E1015', 'PA1024', '00016', '64', '2020-11-27');
